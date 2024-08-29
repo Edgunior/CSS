@@ -1,0 +1,42 @@
+:root{
+    --clr-dark:#0f172a;
+    --clr-light:#fff;
+    --clr-accent:#096b60;
+}
+
+.container{
+   width:80%;
+   height:700px;
+   margin: 0 auto;
+   border: 10px solid var(--clr-dark);
+   display:flex;
+   justify-content:space-between;
+   /* align-items:center; */
+   flex-direction:row;
+   flex-wrap:nowrap;
+   align-content:center; /* can only be used when flex-wrap is wrap */
+}
+
+.item {
+    width: 150px;
+    height: 150px;
+    background-color:#0db4a1;
+    padding: 1em;
+    font-weight: 700;
+    color: var(--clr-light);
+    text-align: center;
+    border: 10px solid var(--clr-accent);
+    border-radius: 10px;
+}
+
+.item-3 {
+   /* flex-grow: 1; */
+  /* flex-shrink: 4; - when tab is shrinking first item to shrink */ 
+ /* flex-basis: 300px; - overwrites width of an item*/
+ /* flex:1 ; - all three in one*/
+ /* align-self:flex-end; - align single item (flex-start, flex-end, center, baseline, stretch)*/
+ /* order: -1;  - can manipulate the order of an item 
+    NOTE: order can mess the readability of an HTML
+    Use it only if nessecary
+ */
+}
