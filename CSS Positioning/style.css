@@ -1,0 +1,67 @@
+:root{
+    --clr-dark:#0f172a;
+    --clr-light:#fff;
+    --clr-accent:#0a584f;
+}
+body {
+    margin: 5em 0 0 0;
+    padding: 0;
+    line-height: 1.6;
+    word-spacing: 1.4px;
+    font-family: 'Roboto', sans-serif;
+    color: var(--clr-dark);
+   
+  }
+
+  .container {
+    width:600px;
+    margin: 0 auto;
+    display: grid;
+    border: 25px solid --clr-accent;
+    background-color: #18aa99;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    position: relative;
+  }
+  
+  .item {
+    width: 150px;
+    height: 150px;
+    background-color:#408a80;
+    font-weight:700;
+    color: var(clr-light);
+    border: 5px solid var(--clr-accent);
+    text-align: center;
+    box-sizing: border-box;
+    margin:0;
+    border-radius: 10px;
+  }
+
+  .item-1 {
+    position: absolute;
+    top:0px;
+    left: 0px;
+    /* bottom: 0px; */
+    /* right: 0px; */
+    z-index: 1; /* also can use -1 to hide it*/
+  }
+
+  .item-2 {
+    position: relative; /* position is relative to the container (parent element) */ 
+    top: 100px;
+    left: 100px;
+    opacity: 0.5;
+    z-index: 1;
+  }
+
+  .item-3 {
+    position: fixed;
+    bottom: 100px;
+    left: 100px;
+    z-index: 2;
+  } /* item-3 stays fixed on the screen all the time even when scrolling*/
+
+  .item-4 {
+    position: sticky;
+    top:25px;
+  } /* moves with the scroll only to the end of container and it "sticks" after 25px of scrolling down (top: 25px) /*
