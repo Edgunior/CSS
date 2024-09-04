@@ -1,0 +1,38 @@
+* {
+    margin:0;
+    padding:0;
+} /* removes automatic margins on all elements 
+     removes the gap between the viewport and the element
+  */
+.box {
+    font-size: 2rem;
+    background-color: pink;
+    
+    /* box model */
+    width: 300px;
+    height: 100px;
+    padding: 16px;
+    border:5px solid black;
+    margin:0px;
+    /* box-sizing:content-box; - default value // width and height define the size of the content */
+    box-sizing:border-box; /* width and height now define the size of entire div*/
+}
+
+
+/*
+
+CSS Box Model is used to describe the dimensions of an element in CSS
+
+There is an element
+Then padding - gives space inside the element
+Then border - gives space around the element (between padding and margin)
+Then margin - gives space outsite the element
+
+
+padding: 20px 30px 40px 50px; - top right bottom left
+same goes for margin
+margin: 20px 30px 40px 50px; - top right bottom left
+
+border: 5px solid black; - first number is width, second is style, third is color
+
+*/
