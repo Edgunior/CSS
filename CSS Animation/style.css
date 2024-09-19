@@ -1,0 +1,62 @@
+
+@keyframes sldineIn {
+    from {
+        transform: translateX(-60%);
+    }
+    to {
+        transform: translateY(450px)
+    }
+}
+
+.slideInLeft {
+    animation-name: sldineIn;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+
+.heading {
+    text-align: center;
+    
+}
+
+@keyframes bounce {
+
+    0%, 40%, 100% {
+        transform: translateY(450px);
+    }
+    20% {
+        transform: translateY(420px);
+    }
+
+    60% {
+        transform: translateY(435px);
+    }
+
+}
+
+.bounce {
+    animation-name: bounce;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slideInRight {
+    0% {
+        transform: translateX(140%);
+    }
+
+    100% {
+        transform: translateY(450px);
+}
+}
+
+.slideInRight {
+    animation-name: slideInRight;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
